@@ -347,13 +347,28 @@ button:hover {
 
 .section-3 {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-self: center;
   padding: var(--section-spacing);
+  gap: 4%;
 }
 
+/* section-3-image */
+
+.s3-image {
+  width: 48%;
+  /* transform: translateX(-58px); */
+}
+
+.s3-image img {
+  width: 130%;
+  margin-left: -30%;
+}
+
+/* ***section3-content*** */
+
 .s3-content {
-  max-width: 570px;
+  width: 48%;
 }
 
 .s3-content h3 {
