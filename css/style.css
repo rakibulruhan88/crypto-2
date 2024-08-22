@@ -1,0 +1,380 @@
+/*-----------------------------------*\
+  #CUSTOM PROPERTY
+\*-----------------------------------*/
+
+/* fonts */
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Michroma&display=swap");
+
+:root {
+  /* background color */
+  --bg-blue: #3772ff;
+  --bg-dark-black: #08071b;
+  --bg-gray-black: #0f1123;
+
+  /* text color */
+  --text-white: hsla(0, 0%, 100%, 1);
+  --text-gray: #605e72;
+  --text-blue: #3772ff;
+  --text-paragraph: #848296;
+
+  /* font family */
+  --fontFamily-michroma: "Michroma", sans-serif;
+  --fontFamily-dm-sans: "DM Sans", sans-serif;
+
+  /* font size */
+  --fontSize-1: 60px;
+  --fontSize-2: 40px;
+  --fontSize-3: 24rem;
+  --fontSize-4: 22px;
+  --fontSize-5: 20px;
+  --fontSize-6: 18px;
+  --fontSize-7: 16px;
+  --fontSize-8: 14px;
+  --fontSize-9: 30px;
+  --fontSize-10: 15px;
+
+  /* font weight */
+  --weight-regular: 400;
+  --weight-semiBold: 500;
+  --weight-bold: 700;
+
+  --section-spacing: 67.5px 0;
+
+  /* BOX SHADOW */
+
+  --shadow: 0px 2px 5px 0px hsla(0, 4%, 50%, 0.2);
+
+  /*** BORDER RADIUS*/
+
+  --radius-circle: 50%;
+  --radius-4: 22px;
+  --radius-3: 21px;
+  --radius-2: 12px;
+  --radius-1: 8px;
+
+  /**
+     * TRANSITION
+     */
+
+  --transition-1: 800ms ease;
+  --transition-2: 500ms ease;
+  --cubic-out: cubic-bezier(0.05, 0.83, 0.52, 0.97);
+}
+
+/*-----------------------------------*\
+    #RESET
+  \*-----------------------------------*/
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a,
+img,
+time,
+span,
+input,
+button,
+textarea,
+ion-icon {
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  height: auto;
+}
+
+input,
+button,
+textarea {
+  background: none;
+  border: none;
+  font: inherit;
+}
+
+input,
+textarea {
+  width: 100%;
+}
+
+button {
+  cursor: pointer;
+}
+
+ion-icon {
+  pointer-events: none;
+}
+
+address {
+  font-style: normal;
+}
+
+address {
+  font-style: normal;
+}
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: var(--bg-dark-black);
+  color: var(--text-white);
+  font-family: var(--fontFamily-dm-sans);
+  font-size: var(--fontSize-6);
+  font-weight: var(--weight-regular);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--bg-dark-black);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--bg-blue);
+  border-radius: 10px;
+  visibility: hidden;
+}
+
+:hover::-webkit-scrollbar-thumb {
+  visibility: visible;
+}
+
+/* *****custom css***** */
+
+h3 {
+  line-height: 48px;
+  font-size: var(--fontSize-9);
+  font-weight: var(--weight-regular);
+  font-family: var(--fontFamily-michroma);
+}
+h2 {
+  line-height: 48px;
+  font-size: var(--fontSize-2);
+  font-weight: var(--weight-regular);
+  font-family: var(--fontFamily-michroma);
+}
+
+p {
+  font-family: DM Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30.4px;
+  text-align: left;
+  color: var(--text-gray);
+}
+
+.container {
+  max-width: 1170px;
+  padding-inline: 15px;
+  margin: 0 auto;
+}
+
+/* logo */
+header {
+  padding: 28px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 67.5px;
+}
+
+.logo img {
+  max-width: 189px;
+}
+
+nav ul {
+  display: flex;
+  gap: 45px;
+}
+
+nav ul li {
+  font-size: var(--fontSize-8);
+}
+
+nav ul li {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: var(--transition-2);
+  color: white;
+}
+
+nav ul li:hover {
+  color: var(--text-blue);
+}
+
+.menu .bx {
+  font-size: 30px;
+  display: none;
+}
+
+button {
+  padding: 10px 42px;
+  font-size: var(--fontSize-8);
+  border-radius: var(--radius-4);
+  background: var(--bg-blue);
+  color: white;
+  transition: var(--transition-2);
+}
+
+button:hover {
+  scale: 1.1;
+}
+
+.hero {
+  padding: var(--section-spacing);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+
+.hero-content {
+  max-width: 978px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-content h1 {
+  font-size: var(--fontSize-1);
+  font-family: var(--fontFamily-michroma);
+  font-weight: 400;
+  line-height: 96px;
+  margin-bottom: 43px;
+}
+
+.hero-content h1 span {
+  display: inline;
+  color: var(--text-blue);
+}
+
+.hero-content button {
+  padding: 10px 29px;
+}
+
+.hero-img {
+  max-width: 1005px;
+  margin-top: 65px;
+}
+
+.hero-img img {
+  max-width: 100%;
+}
+
+.section-2 {
+  padding: var(--section-spacing);
+  overflow: hidden;
+}
+
+/* ****slider **** */
+
+.slider-container {
+  overflow: hidden;
+  padding: 100px 0px 40px 0;
+  border-top: var(--text-paragraph) 1px solid;
+  opacity: 80%;
+}
+
+.slider {
+  position: relative;
+  max-width: 100%;
+  background: rgb(64, 84, 172);
+  background: linear-gradient(
+    277deg,
+    rgba(148, 160, 211, 0.838) 24%,
+    rgba(42, 15, 15, 0.7091211484593838) 76%
+  );
+  z-index: 99999;
+}
+
+.slider .item {
+  position: absolute;
+  left: max(calc(170px * 5), 100%);
+  animation-name: slider;
+  animation-duration: 15s;
+  transform: translateY(-50%);
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.item1 {
+  animation-delay: 3s;
+}
+.item2 {
+  animation-delay: 6s;
+}
+.item3 {
+  animation-delay: 9s;
+}
+.item4 {
+  animation-delay: 12s;
+}
+.item5 {
+  animation-delay: 15s;
+}
+
+@keyframes slider {
+  to {
+    left: -300px;
+  }
+}
+
+/* ****section 3**** */
+
+.section-3 {
+  display: flex;
+  justify-content: flex-end;
+  align-self: center;
+  padding: var(--section-spacing);
+}
+
+.s3-content {
+  max-width: 570px;
+}
+
+.s3-content h3 {
+  margin-bottom: 18px;
+}
+.s3-content p {
+  margin-bottom: 32;
+}
+
+.counters {
+  display: flex;
+  justify-content: space-between;
+}
+
+.counter p {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 22px;
+  color: white;
+}
+
+.s3-content button {
+  padding: 10px 31px;
+}
