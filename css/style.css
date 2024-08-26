@@ -395,6 +395,7 @@ button:hover {
 .counters {
   display: flex;
   justify-content: space-between;
+  margin: 32px 0;
 }
 
 .counter p {
@@ -406,6 +407,7 @@ button:hover {
 
 .s3-content button {
   padding: 10px 31px;
+  margin-top: 32px;
 }
 
 /* ****section 4**** */
@@ -971,6 +973,15 @@ footer {
     margin: auto;
   }
 
+  .s3-content P{
+    text-align: center;
+  }
+
+ .s3-content button{
+  margin: auto;
+  margin-top: 32px;
+ }
+
   .s4-wraper {
     flex-direction: column;
     gap: 30px;
@@ -1061,6 +1072,9 @@ footer {
 
   .footer-nav {
     display: none;
+  }
+  .active {
+    top: 1%;
   }
 }
 @media only screen and (max-width: 540px) {
