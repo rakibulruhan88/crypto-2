@@ -656,6 +656,7 @@ button:hover {
 
 .card-content button span {
   display: inline;
+  font-size: 7px;
 }
 
 .card img {
